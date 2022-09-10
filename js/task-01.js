@@ -1,5 +1,11 @@
-const categoriesRef = document.querySelector('.categories');
-console.log(categories); 
-const listItems = document.querySelectorAll('.item');
-console.log(listItems);
-/*listItems.forEach((item)=>{console.lof(item);});*/
+
+const allCategories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${allCategories.length}`);
+
+const categoriesArray = [...allCategories]
+  .map(
+    categories => `Category: ${categories.children[0].textContent}
+    Elements: ${categories.children[1].children.length}`
+  )
+  .join("\n");
+console.log(categoriesArray);
