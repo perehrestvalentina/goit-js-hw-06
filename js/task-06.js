@@ -34,14 +34,21 @@ const inputBlur = (event)=>{
   console.log(requiredLength === value.length );
  if (requiredLength === value.length ){
   console.log('add');
-  event.target.classList.add('valid');
-  event.target.classList.remove('invalid');
+  // event.target.classList.add('valid');
+  // event.target.classList.remove('invalid');
+  changeClass('valid', 'invalid', event.target);
  }
  else { 
-  event.target.classList.add('invalid');
-  event.target.classList.remove('valid');
+  // event.target.classList.add('invalid');
+  // event.target.classList.remove('valid');
+  changeClass('invalid', 'valid', event.target);
 }
   
 };
 
 nameInputRef.addEventListener("blur", inputBlur);
+
+function changeClass(add, remove, elem){
+  elem.classList.add(add);
+  elem.classList.remove(remove);
+};
