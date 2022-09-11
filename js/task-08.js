@@ -1,20 +1,4 @@
-/*const form = document.querySelector(".form");
 
-form.addEventListener("submit", handleSubmit);
-
-function handleSubmit(event) {
-  event.preventDefault();
-  const {
-    elements: { login, password }
-  } = event.currentTarget;
-
-  if (login.value === "" || password.value === "") {
-    return console.log("Please fill in all the fields!");
-  }
-
-  console.log(`Login: ${login.value}, Password: ${password.value}`);
-  event.currentTarget.reset();
-}
 const input = document.querySelector("#controls input");
 console.log(input);
 console.log(input.value);
@@ -72,21 +56,22 @@ const deletebox = () => {
   // console.log(baseboxSize);
 };
 
-deleteboxBtn.addEventListener("click", deletebox);*/
-const form = document.querySelector(".form");
+deleteboxBtn.addEventListener("click", deletebox);
 
-form.addEventListener("submit", handleSubmit);
+// const form = document.querySelector(".form");
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const {
-    elements: { login, password }
-  } = event.currentTarget;
+// form.addEventListener("submit", handleSubmit);
 
-  if (login.value === "" || password.value === "") {
-    return console.log("Please fill in all the fields!");
-  }
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const {
+//     elements: { email, password }
+//   } = event.currentTarget;
 
-  console.log(`Login: ${login.value}, Password: ${password.value}`);
-  event.currentTarget.reset();
-}
+//   if (email.value === "" || password.value === "") {
+//     return console.log("Please fill in all the fields!");
+//   }
+
+//   console.log(`Email: ${email.value}, Password: ${password.value}`);
+//   event.currentTarget.reset();
+// }
