@@ -7,23 +7,6 @@ const ingredients = [
   'Condiments',
 ];
 
-/*let ulList = document.getElementById("ingredients");
-console.log(ulList);
-const foodIngredients = ingredients.forEach(ingredient => {
-  let items = document.createElement("li");
-  items.innerHTML = ingredient;
-  ulList.append(items);
-  parent.append(...items)
-});
-
-console.log(foodIngredients);*/
-/*const addIngredient = ingredients.map( option => {
-  const createingredient = document.createElement("li");
-  createingredient.textContent = option;
-  return createingredient;
-});
-console.log(addIngredient);
-allIngredients.append(...addIngredient);*/
 
 const buildIngredients = () => {
     const allIngredients = document.querySelector("ul#ingredients");
@@ -35,3 +18,5 @@ const buildIngredients = () => {
      console.log(allIngredients);
    };
    buildIngredients();
+
+
