@@ -1,16 +1,16 @@
 
-const result = {
-  changeColorBtn: document.querySelector('.change-color'),
+const refs = {
+  changeColorBtn: document.querySelector(".change-color"),
   color: document.querySelector('.color'),
   body: document.querySelector('body'), 
 };
 
-result.changeColorBtn.addEventListener('click', changeColorBtn);
+refs.changeColorBtn.addEventListener('click', changeBtnClick);
 
 function changeBtnClick(){
   const currentColor = getRandomHexColor();
-result.color.textContent = currentColor;
-result.style.backgroundColor= currentColor; 
+refs.color.textContent = currentColor;
+refs.body.style.backgroundColor= currentColor; 
 };
 
 function getRandomHexColor() {
