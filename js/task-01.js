@@ -1,5 +1,5 @@
 
-const allCategories = document.querySelectorAll(".item");
+/*const allCategories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${allCategories.length}`);
 
 const categoriesArray = [...allCategories]
@@ -8,4 +8,14 @@ const categoriesArray = [...allCategories]
     Elements: ${categories.children[1].children.length}`
   )
   .join("\n");
-console.log(categoriesArray);
+console.log(categoriesArray);*/
+
+const allCategories = document. querySelectorAll(".item");
+console.log(`Number of categories: ${allCategories.length}`);
+
+allCategories.forEach(item =>{
+  console.log('Category:', item.firstElementChild.textContent)
+  
+const itemList = item.querySelectorAll('li');
+console.log('Elements:', itemList.length);
+});

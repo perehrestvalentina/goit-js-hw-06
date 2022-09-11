@@ -1,4 +1,4 @@
-const form = document.querySelector(".form");
+/*const form = document.querySelector(".form");
 
 form.addEventListener("submit", handleSubmit);
 
@@ -72,4 +72,21 @@ const deletebox = () => {
   // console.log(baseboxSize);
 };
 
-deleteboxBtn.addEventListener("click", deletebox);
+deleteboxBtn.addEventListener("click", deletebox);*/
+const form = document.querySelector(".form");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const {
+    elements: { login, password }
+  } = event.currentTarget;
+
+  if (login.value === "" || password.value === "") {
+    return console.log("Please fill in all the fields!");
+  }
+
+  console.log(`Login: ${login.value}, Password: ${password.value}`);
+  event.currentTarget.reset();
+}
